@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kofi Mensah</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bb129a315.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+   
+    <div class="container" >
+            <nav>
+                <h2 class="logo">
+                  <span class="logo-first">Bra.</span>Kofi
+                </h2>
+              
+                <ul class="nav-links" id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav>
+              <div class="header-content">
+              <div class="header-text">
+               
+                <h2> <span id="rotate"></span></h2>
+                <h1>Hi, I'm <span>Kofi</span> <br>Mensah from Ghana</h1>
+                </div>
+                
+            <div class="about-col-3">
+                <img src="images/profile3.png">
+            </div>
+              
+        
+    </div>
+
+</div>
+
+<!-------------------about--------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>“I am Kofi Mensah, a Cloud Engineer and DevOps professional with experience in 
+                    designing and maintaining cloud infrastructure, implementing CI/CD pipelines,
+                     and automating deployment workflows. I am passionate about leveraging tools 
+                     like AWS, Docker, and Terraform to build efficient, scalable, and secure solutions. 
+                     My goal is to continuously grow as a cloud and DevOps engineer while delivering impactful projects.”</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>CSS<br>JAVASCRIPT</li>
+                            <li><span>Amazon Web Services</span><br>Ec2<br>Cloudfront<br>Route53</li>
+                            <li><span>Cloud</span><br> infrastructure<br> Management</li>
+                            <li><span>D</span>ocker</li>
+                            <li><span>T</span>erraform</li>
+                            <li><span>CI/CD</span><br>Pipelines</li>
+                            <li><span>Github</span><br>Actions</li>
+                            <li><span>N</span>ginx</li>
+                            <li><span>Linux</span><br>Server Admini-<br>stration</li>
+                        </ul>
+
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Infuse Incorporated</li>
+                            <li><span>2022 – 2024 </span><br>Bezeleel Consultancy</li>
+                            <li><span>2016 – 2022   </span><br> Impact Global Consult</li>
+                            <li><span>2008 – 2016   </span><br> SuperTech Limited </li>
+                           
+                        </ul>
+
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Linux Unhatched</span><br>Cisco Networking Academy </li>
+                            <li><span>Linux Essentials</span><br>Cisco Networking Academy </li>
+                            <li><span>Data Analytics with Power<br> BI certification</span><br> Ghana – India Kofi Annan<br> center of Excellence in ICT	</li>
+                            <li><span>Second Bachelor’s Degree -<br> Information Technology</span><br>Pentecost University</li>
+                            <li><span>Cloud Computing Engineering Certification</span><br>Accra Digital Centre</li>
+                            <li><span>Cisco certified network Associate</span><br>hana Institute of Management and<br> Public Administration (GIMPA)</li>
+                            <li><span>Bachelor’s Degrees in Business<br> Administration Insurance with Actuarial science</span><br>Pentecost University</li>
+                            
+                        </ul>
+
+                     </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-----------------------------services------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-cloud"></i>
+                <h2>Cloud Infrastru<br><br class="mobile-break">cture</h2>
+                <p>Deploy and manage scalable cloud infrast<br class="mobile-break">ructure using AWS services.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-gitlab"></i>
+                <h2>DevOps Auto<br class="mobile-break">mation</h2>
+                <p>Build CI/CD pipelines that automate testing and dep<br class="mobile-break">loyment..</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-docker"></i>
+                <h2>Docker Contain<br><br class="mobile-break">erization</h2>
+                <p>Package applications into containers for reliable deployme<br class="mobile-break">nts.</p>
+                <a href="#">Learn More</a>
+            </div>
+            </div>
+            <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Infrastr<br class="mobile-break">ucture <br class="mobile-break">as Code</h2>
+                <p>Provision cloud infrastruc<br class="mobile-break">ture using Terraform.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-wordpress"></i>
+                <h2>Website Deplo<br class="mobile-break">yment</h2>
+                <p>Deploy and manage websites on cloud platforms.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-linux"></i>
+                <h2>Linux Server Manage-<br>ment</h2>
+                <p>Configure and maintain secure Linux servers.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!------------------------portfolio-------------------------------------->
+<div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title">Projects</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images/ai.jpg">
+                <div class="layer">
+            
+                    <h3>AI POWERED CHATBOT</h3>
+                    <p>An AI Powered Chatbot is an intelligent application that uses 
+                        Artificial Intelligence and Natural Language processing
+                        Artificial Intelligence and Natural Language Processing to simulate
+                         human conversation and provide automated responses to users.</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/audio.jpg">
+            <div class="layer">
+                <h3>AUDIO TO TEXT</h3>
+
+                <p>Audio to Text is a speech recognition project that converts spoken 
+                    audio into written text using modern transcription technology.</p>
+                <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="images/email.jpg">
+                <div class="layer">
+                    <h3>SERVERLESS EMAIL MARKETING APP</h3>
+                    <p>Serverless Email Marketing App is a cloud-based application that allows 
+                        businesses to create, schedule, and send marketing emails without managing servers.</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+                
+            </div>
+         </div>
+             <div class="work-list">
+            <div class="work">
+                <img src="images/mc-web.jpg">
+                <div class="layer">
+                    <h3>MULTI-CONTAINER WEB APPLICATION</h3>
+                    <p>A Multi-Container Web Application is a software system where different 
+                        parts of the application run in separate containers but work together
+                         as one service..</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/docker.cicd.jpg">
+                <div class="layer">
+                    <h3>CI/CD PIPELINE FOR PORTOFOLIO WEBSITE</h3>
+                    <p>A CI/CD Pipeline for a Portfolio Website is an automated 
+                        workflow that builds, tests, and deploys website updates 
+                        whenever changes are made to the code.</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Kubernetes.jpg">
+                <div class="layer">
+                    <h3>KUBERNETES INFRASTRUCTURE DEPLOYMENT</h3>
+                    <p>In this project, containerized applications are deployed, scaled, and
+                         managed automatically across multiple servers to ensure high availability
+                          and reliability.</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             </div>
+
+             <div class="work-list">
+            <div class="work">
+                <img src="images/c.port.jpg">
+                <div class="layer">
+                    <h3>CONTAINERIZED PORTFOLIO WEBSITE</h3>
+                    <p>A Containerized Portfolio Website is a personal website that is packaged and 
+                        deployed using containers to ensure consistent performance across different 
+                        environments.</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/aws.static.jpg">
+                <div class="layer">
+                    <h3>TERRAFORM AWS STATIC-WEBSITE INFRASTRUCTURE</h3>
+                    <p>Terraform AWS Static Website Infrastructure is a project that uses Infrastructure
+                         as Code (IaC) to automatically create and manage cloud resources for hosting a 
+                         static website on Amazon Web Services.</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cicd.port.jpg">
+                <div class="layer">
+                    <h3>DOCKER CI/CD PIPELINE</h3>
+                    <p>In this project, application code is packaged into containers using Docker,
+                         and automated pipelines are configured with tools like GitHub Actions 
+                         to continuously integrate code changes and deploy updated containers..</p>
+                        <a href="https://github.com/kofipap/First_EC2_Server_Hosting_Linux"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+             </div>
+             
+
+    </div>
+                <div>
+                <a href="https://github.com/kofipap" class="btn"> See More </a>
+             </div>
+
+</div>
+
+<!-------------------------contact---------------------------->
+
+<div id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-at"></i>solomonmensah@kofimensah.dev</p>
+            <p> <i class="fa-solid fa-phone"></i>233-506 423 627 / 532 531 490</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kofi-mensah88/"><i class="fa-brands fa-linkedin"></i></a>
+                 <a href="https://github.com/kofipap"><i class="fa-brands fa-github"></i></a>
+                  <a href="mailto:solomonmensah@kofimensah.dev"><i class="fa-regular fa-envelope"></i></a>
+                   <a href="https://wa.me/233506423627"><i class="fa-brands fa-whatsapp"></i></a>
+                   <a href="https://web.facebook.com/PAPSOLOV"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <a href="images/Kofi_Mensah_CV.pdf"  download  class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+
+            <form name="YOUR_FORM_NAME">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+
+            </form>
+            <span id="msg"></span>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 Kofi Mensah. All rights reserved. Designed and developed by Kofi Mensah.</p>
+    </div>
+
+
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    const roles = ["Cloud Engineer", "DevOps Engineer", "AWS Enthusiast", "Programmer"];
+let currentIndex = 0;
+const rotateText = document.getElementById("rotate");
+
+function changeText() {
+    rotateText.style.opacity = 0;
+    setTimeout(() => {
+        rotateText.innerText = roles[currentIndex];
+        rotateText.style.opacity = 1;
+        currentIndex = (currentIndex + 1) % roles.length;
+    }, 500);
+}
+
+// Initial call and interval
+setInterval(changeText, 3000);
+changeText();
+
+// Simple scroll reveal observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+document.querySelectorAll('.section').forEach((section) => observer.observe(section));
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzPw6ZdXco8mgVBEQ-tEtLYOQvEwwPebG3znKBhroV6fH7rvAlTGdy9FIIOVYaXDtfy/exec'
+	const form = document.forms['YOUR_FORM_NAME']
+    const msg = document.getElementById("msg")
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+
+</html>
